@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>PopcornSearch.in</title>
+  
+</head>
+<body>
+  <div class="header">
+    <h1>Popcorn Search <span><img src="https://cdn-icons-png.flaticon.com/128/4831/4831192.png" alt=""></span></h1>
+  </div>
+  <div class="search-section">
+    <input type="text" id="searchInput" class="search-box" placeholder="Search for movies...">
+    <button id="searchBtn" class="search-btn">Search</button>
+  </div>
+  <div class="movie-container" id="movieContainer"></div>
+  <div class="pagination" id="pagination">
+    <button id="prevBtn" class="pagination-btn">&laquo; Prev</button>
+    <span id="pageNumber">1</span>
+    <button id="nextBtn" class="pagination-btn">Next &raquo;</button>
+  </div>
+  <div id="popupOverlay" class="popup-overlay" style="display: none;"></div>
+  <div id="moviePopup" class="movie-popup" style="display: none;">
+    <div id="popupContent"></div>
+    <button id="closePopup" class="close-popup">Close</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
